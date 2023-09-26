@@ -6,7 +6,7 @@ Promoting Mental Health and Digital Well-being
 
 In the digital age, our lives are deeply intertwined with technology, offering both benefits and challenges to our mental health. MindfulTech is a web application designed to address these challenges and promote well-being in the digital era.
 
-Key Features:
+# Key Features:
 
 # Mindfulness and Meditation Guides: 
 MindfulTech provides guided mindfulness and meditation sessions to help users reduce stress, anxiety, and digital fatigue. These sessions are easily accessible, allowing users to incorporate mindfulness practices into their daily routines.
@@ -25,3 +25,6 @@ Join a supportive community of users who share similar challenges and goals. Int
 
 # Reporting and Support: 
 For platforms with social interaction elements, we've implemented reporting mechanisms for online harassment and offer resources to support victims. Your well-being and safety are our top priorities.
+
+
+# Collaborators: Shridhar (https://github.com/Shrii939), Chandana (https://github.com/ChandanaVaidya17) and Shrutha (https://github.com/SVB808)
