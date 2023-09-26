@@ -35,4 +35,5 @@ For platforms with social interaction elements, we've implemented reporting mech
 ### 6) Run the server: python manage.py runserver 0.0.0.0:8000
 ### 7) Open a browser and go to the following link: http://127.0.0.1:8001/
 
-# Collaborators: Shridhar (https://github.com/Shrii939), Chandana (https://github.com/ChandanaVaidya17) and Shrutha (https://github.com/SVB808)
+# Collaborators: 
+### Shridhar (https://github.com/Shrii939), Chandana (https://github.com/ChandanaVaidya17) and Shrutha (https://github.com/SVB808)
