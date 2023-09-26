@@ -1,0 +1,28 @@
+<!-- bullyingapp/templates/bullyingapp/report_bullying.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Report Bullying</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/report.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Report Cyberbullying</h1>
+        </header>
+        <section class="card">
+            <div class="card-header">
+                <h2>Submit a Report</h2>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

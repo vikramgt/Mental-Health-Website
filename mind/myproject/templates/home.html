@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeacefulMinds</title>
+    {%load static%}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css\index.css' %}"
+    />
+  </head>
+  <body>
+    {% csrf_token %}
+    <header>
+      <div class="logo">
+       {% load static %} <img src='{% static "download.png" %}' alt="home" />
+
+      </div>
+
+      <div class="header-div">
+        <div class="navigation">
+          <ul>
+
+            
+
+            <li>
+              {% if 'user' in request.session %}
+<li><a href="taketest">Take Test</a></li>
+{% else %}
+<li><a href="signin">Take Test</a></li>
+{% endif %}
+
+                </li>
+            {% if 'user' in request.session %}
+            <li><a href="{% url 'signin' %}">Sign Out</a></li>
+            {% endif %}
+            <li><a href="focusMode">Focus Mode</a></li>
+            <li><a href="Mentalhealth">Mental Health</a></li>
+            <li><a href="report_bullying">Report</a></li>
+            <li><a href="#aboutus1">About Us</a></li>
+           
+          </ul>
+
+          {% if 'user' in request.session %}
+          <button class="sign-in" onclick="window.location.href = 'logout'">
+            Logout
+          </button>
+          {% else %}
+          <button
+          class="sign-in"
+          onclick="location.href='signin'"
+        >
+          SignIn
+        </button>
+        {%endif%}
+        </div>
+      </div>
+    </header>
+    <main>
+    <div class="container">
+        <div class="content">
+            <div class="square twitch" style="margin-bottom: 50px;">
+                <span class="one" ></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <div class="circle">
+                  
+                    <h2 class="DrugRadar"> PeacefulMinds
+               
+                    </h2>
+                    <p class="tag-line">Small steps can lead to big progress in mental health</p>
+                </div>
+            </div>
+<br><br><br><br>
+            
+            <a  class="button" target="_parent">
+                    <span class="actual-text">&nbsp;Mental health&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;Mental health&nbsp;</span>
+            </a>
+            <div class ="mentalhealth">
+            <p ><br> Mental health encompasses a person's emotional, psychological, and social well-being. It involves the ability to handle stress, maintain healthy relationships, think clearly, and cope with life's challenges effectively. Good mental health allows individuals to set and achieve goals, enjoy life, seek help when needed, balance work and play, practice self-care, and build resilience. It's a dynamic state that fluctuates over time, and maintaining it requires a combination of self-care, social support, and, when necessary, professional help. </p></div>
+            
+        <a  class="button" target="_parent">
+                    <span class="actual-text">&nbsp;Suicide Rates&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;Suicide Rates&nbsp;</span>
+                    
+            </a>
+            <div class ="mentalhealth">
+            <p>Preventing suicide is closely tied to addressing mental health. Suicide ranks as the fourth leading cause of death among 15-29-year-olds, and severe mental health conditions can lead to premature mortality. Stigma and discrimination persist, and the treatment gap remains wide, despite cost-effective solutions. Increased investment is crucial for awareness, access to care, and research. WHO's Special Initiative for Mental Health (2019-2023) aims to provide quality mental health care to an additional 100 million people in 12 priority countries, highlighting the urgency of this issue.</p></div>
+            <a  id="aboutus1" class="button" target="_parent">
+                    <span class="actual-text">&nbsp;About Us&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;About Us&nbsp;</span>
+                    
+            </a>
+            <div class =" mentalhealth">
+            <p >
+
+Welcome to PeacefulMinds, a dedicated space for nurturing mental well-being and emotional health. Our mission is to provide compassionate support, resources, and guidance to individuals seeking to improve their mental health. Whether you're looking for expert advice, self-help tools, or a supportive community, we're here to empower you on your journey towards mental and emotional wellness. Together, we can break down stigmas, promote self-care, and foster resilience. Explore a wealth of information, connect with like-minded individuals, and embark on a path to a happier, healthier mind.</p></div>
+          
+</div>
+
+    </div>
+
+  </body>
+</html>
+
+Executive Summary:
+
+This report provides an overview of the development and features of a mental health and well-being website designed to address the challenges brought by the digital age, such as information overload, social media pressure, and online harassment. The website is designed to enhance mental health and well-being while promoting responsible digital usage. It offers a wide range of features, including mental health assessment, focus mode, streak points, curated mental health FAQs, a reporting system, and more.
+
+Website Features:
+
+Home Page: The website's home page introduces its purpose and goals, setting the tone for a user-friendly and supportive environment.
+
+Mental Health Assessment: Integrated with machine learning, users can take a test to assess their mental health needs. The system predicts whether users might require consultations or support based on their responses.
+
+Focus Mode: A unique feature, allowing users to take screen break sessions of varying durations (5, 10, 20, and 30 minutes). It encourages healthy screen time habits and offers opportunities to engage in productive activities.
+
+Streak Points: Users earn streak points for daily participation in Focus Mode. These points can be redeemed for rewards and goodies, incentivizing users to maintain a daily practice.
+
+Mental Health FAQ: The website offers a rich repository of curated mental health information, significantly reducing the need for users to search elsewhere. A search feature is available for easy access to relevant content.
+
+Signup and Signin: Users can create accounts and log in to access personalized features, enhancing their overall experience.
+
+Report Page: A dedicated reporting system is in place, allowing users to report instances of cyberbullying. The website's team provides support and assistance to victims.
+
+Color Palette Design: The website's design incorporates a soothing color palette, contributing to a calming user experience.
+
+Future Additions:
+
+In the near future, the website aims to implement the following enhancements:
+
+Anonymous User Interactions: The ability for users to interact with others anonymously, creating a space for sharing experiences and seeking support.
+
+Screen Break Monitoring: The introduction of machine learning to monitor and encourage healthy screen break habits, ensuring users' well-being.
+
+Global Ranking: A ranking system to recognize and reward users for their screen break or study time, fostering healthy competition and motivation.
+
+Premium Features: The addition of premium services such as newsletters, online consultations with mental health professionals, and an investigation team for more personalized support.
+
+Conclusion:
+
+The mental health and well-being website is a comprehensive and user-centric platform that aims to empower individuals to manage their mental health, digital usage, and screen time effectively. With an array of educational content, interactive features, and support services, the website is positioned to become a valuable resource for individuals seeking to enhance their mental well-being and digital habits. Continuous improvement, user feedback, and a commitment to well-being are at the core of this website's mission.

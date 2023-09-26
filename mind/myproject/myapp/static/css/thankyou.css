@@ -1,0 +1,73 @@
+/* css/style.css */
+
+/* Reset some default styles and apply a background color */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content vertically and horizontally */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the card */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Style card header */
+.card-header {
+    background-color: #2f75e1;
+    color: white;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+/* Style card body */
+.card-body {
+    padding: 20px;
+}
+
+/* Style text content */
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Redirect link style */
+a {
+    color: #2f75e1;
+    text-decoration: none;
+}
+
+/* Add hover effect to the link */
+a:hover {
+    text-decoration: underline;
+}
+
+
+.tagline {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}

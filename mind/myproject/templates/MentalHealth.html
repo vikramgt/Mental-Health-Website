@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% csrf_token %}
+    {% load static %}
+    <title>Professional FAQs</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/MentalHealth.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="brand">
+            <h3>Why You Should Trust Us</h3>
+            <h4>We Care About the New Generation's Mental Health</h4>
+            <h4>We Research and Bring You the Best Results to Ease Information Overload</h4>
+            <h5><a href="#">Subscribe</a> to Our Weekly Articles and Updates</h5>
+        </div>
+        <h1>FAQs</h1>
+        <div class="search">
+            <input type="text" id="search" placeholder="Search FAQs...">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="faq-cards">
+            {% for faq in faqs %}
+                <div class="faq-card" data-blog-url="{{ faq.blog_url }}">
+                    <h3>{{ faq.question }}</h3>
+                    <p class="answer">{{ faq.answer }}</p>
+                    <a class="website-link" href="{{ faq.blog_url }}" target="_blank">Blog</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div id="blog-content" class="hidden">
+        <h1>Blog Content</h1>
+        <div id="blog-text"></div>
+    </div>
+    <script src="{% static 'js/MentalHealth.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- bullyingapp/templates/bullyingapp/thank_you.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    {%load static%}
+    <meta http-equiv="refresh" content="5;url=/" />
+    <title>Thank You</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/thankyou.css' %}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="card">
+        <div class="card-header">
+          <h2>Thank You for Reporting</h2>
+        </div>
+        <div class="card-body">
+          <p>Your report has been received and will be reviewed.</p>
+          <p class="tagline">
+            Your courage makes a difference. Together, we can create a safer
+            online community.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

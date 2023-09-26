@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/takeTest.css' %}"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <div id="quiz">
+          <h1>Quiz</h1>
+          <div id="question"></div>
+          <form id="form"></form>
+        </div>
+      </div>
+      <button id="submit">Next</button>
+    </div>
+    <div>
+      <h2 class="answer"></h2>
+    </div>
+  </body>
+  {% load static %}
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="module" src="{% static 'js/takeTest.js' %}"></script>
+</html>

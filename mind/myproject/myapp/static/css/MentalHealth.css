@@ -1,0 +1,151 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* background: url("https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat; */
+    background: url("https://wallpapers.com/images/hd/ultrawide-sea-vcv1ah7q0yylw2uw.webp") no-repeat fixed;
+
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff4d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.brand {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.brand h3 {
+    font-size: 24px;
+}
+
+.brand h4 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.brand h5 {
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.faq-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.faq-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #ffffff56;
+    transition: transform 0.2s;
+    flex-basis: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+.faq-card:hover {
+    transform: scale(1.22); 
+    box-shadow: 1px 1px 10px rgba(0, 123, 255, 0.5); 
+    background-color: #ffffffaf;
+
+}
+
+
+.faq-card h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.faq-card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#blog-content {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+/* Add this CSS for the expanded card and button styles */
+.faq-card.expanded {
+    transform: scale(1.02);
+    height: auto;
+    padding: 20px;
+}
+
+.faq-card.expanded .answer {
+    display: block;
+}
+
+.faq-card.expanded .read-more-button {
+    display: none;
+}
+
+.faq-card .read-more-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.faq-card .website-link {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.faq-card .website-link:hover {
+    text-decoration: underline;
+}

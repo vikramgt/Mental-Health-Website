@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%csrf_token%}  
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/focusMode.css' %}" />
+    <title>Modern and Peaceful Django Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Focus Mode</h1>
+    </header>
+    <main>
+        
+      <section id="intro">
+        <h2>Discover Inner Peace</h2>
+        <p style="color:white">Experience tranquility and harmony in our modern web space.</p>
+        <button id="focus-button">Enable Focus Mode</button>
+      </section>
+      <div id="focus-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Choose a timer duration:</p>
+          <button class="timer-button" data-minutes="5">5 min</button>
+          <button class="timer-button" data-minutes="10">10 min</button>
+          <button class="timer-button" data-minutes="20">20 min</button>
+          <button class="timer-button" data-minutes="30">30 min</button>
+          <div id="countdown-timer">00:00</div>
+          <p id="timer-message">Stay on the site until the timer ends.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p style="color:white">&copy; 2023 Your Website</p>
+    </footer>
+    <script src="{% static 'js/focusMode.js' %}"></script>
+  </body>
+</html>

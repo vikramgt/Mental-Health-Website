@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+  </head>
+  <body>
+    <form method="post" action="">
+      {% csrf_token %}
+
+      <label for="{{ form.user_name.id_for_label }}">User Name:</label>
+      {{ form.user_name }} {{ form.user_name.errors }}
+
+      <label for="{{ form.password.id_for_label }}">Password:</label>
+      {{ form.password }} {{ form.password.errors }}
+
+      <label for="{{ form.gender.id_for_label }}">Gender:</label>
+      {{ form.gender }} {{ form.gender.errors }}
+
+      <label for="{{ form.dob.id_for_label }}">Date of Birth:</label>
+      {{ form.dob }} {{ form.dob.errors }}
+
+      <label for="{{ form.email.id_for_label }}">Email:</label>
+      {{ form.email }} {{ form.email.errors }}
+
+      <input type="submit" value="Submit" class="btn btn-outline-success" />
+    </form>
+  </body>
+</html>
