@@ -2,3 +2,7 @@ python==3.5 - 3.8
 tensorflow== 2.2.1
 keras==2.2.0
 scikit-learn==1.2.2
+django==3.2.18
+djangorestframework==3.14.0
+numpy
+pandas
